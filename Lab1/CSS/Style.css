@@ -1,0 +1,27 @@
+body{
+    background-color: antiquewhite
+}
+
+
+.Section1{
+    border-bottom-color: black;
+    border-bottom-style:solid ;  
+}
+
+.Header{
+    border-bottom-color: black;
+    border-bottom-style:solid ;   
+}
+
+#bigFont{
+    font-size: 30px
+        
+}
+
+#smallFont{
+    font-size: 10px
+}
+#fontColor{
+    color: red
+    
+}
