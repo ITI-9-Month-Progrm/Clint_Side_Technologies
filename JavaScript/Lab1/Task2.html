@@ -1,0 +1,42 @@
+<!DOCTYP>
+<html>
+<head>
+    <title>Sumation</title>
+    </head>
+<body>
+    <script>
+   
+       var sum = 0;
+       var result = 0;
+       var flag = 0;
+ 
+
+do{
+    result = prompt("ENTER A NUM");
+    sum +=parseInt (result);
+
+}while(sum <=100 && isFinite(result)&& flag==0 && result !=0)
+    
+    if(isNaN(result)){
+        document.write("not a number");
+    }
+else if(result == 0){
+    document.write("zero is not allowed and sum is equal   ",sum);
+flag=0;
+}
+else{
+    document.write("value before exceding the limit was "+(sum - result));
+flag = 1;
+}
+        
+        
+  
+    
+    </script>
+    
+    
+    
+    
+    </body>
+
+</html>
