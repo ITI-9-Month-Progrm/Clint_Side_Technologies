@@ -1,23 +1,22 @@
-<!DOCTYP>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Displaying Headers</title>
+    
+    <title>Displaying with Diffrenet header Tags</title>
     </head>
     <body>
+    
     <script>
+        var inputUser=prompt("Please Enter Any String");
+        if(inputUser){
+            for(var i=1;i<=6;i++){
+                document.write("<h"+i+">"+inputUser+"</h"+i+">");
+            }
+        }
+  
         
-         var i;
-    for(i=1 ; i<=6 ; i++ )
-    {
-        document.write("<h"+i+"> This Header Number "+ i +"</h"+i+">");
-    }
-
+        
         </script>
     
     </body>
 </html>
-  
-    
-
-
-

@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>palindrome</title>
+    </head>
+<body>
+    <script>
+        function reverseString(str){
+            var reverseStr=" ";
+            var i;
+            for(i=str.length-1;i>=0;i--){
+                reverseStr+=str[i];
+            }
+            return reverseStr;
+            
+        }
+        
+    var inputUser = prompt("Please Enter Your String: ");
+    var caseConsidration=confirm("If you want to consider Case Sensitive?");
+    
+        var originalString=inputUser;    
+        var palindromString=reverseString(inputUser); 
+       /// document.writeln(palindromString);
+        
+    if(caseConsidration==true){
+        
+        if (palindromString==originalString){
+            document.write("The String is not  Palinderom:"+palindromString+" "+originalString);
+        }
+    } 
+    else{
+       
+        if (palindromString.toLocaleLowerCase()==originalString.toLowerCase()){
+            document.write("The String is Palinderom:"+palindromString+" "+originalString);
+        }
+    } 
+    
+    
+    </script>
+    
+    </body>
+</html>

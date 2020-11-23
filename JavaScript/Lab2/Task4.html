@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Array Operations</title>
+    </head>
+    <bod>
+    <script>
+        function sum(arr){
+            var sum=0;
+            for(var i=0;i<arr.length;i++){
+                sum+=arr[i];
+            }
+            return sum;
+        }
+        
+         function divation(arr){
+            var div=1;
+            for(var i=0;i<arr.length;i++){
+                div/=arr[i];
+            }
+            return div;
+        }
+        
+         function product(arr){
+            var product=1;
+            for(var i=0;i<arr.length;i++){
+                product*=arr[i];
+            }
+            return product;
+        }
+           var arr=new Array();
+           for(var i=0;i<3;i++){
+               arr[i]=parseInt(prompt("Please Enter The value of Element"+i));
+           }
+        
+          document.write("Sum of 3 Values is :"+arr.join("+")+"=" ,sum(arr)+"<br>");
+          document.write("Devation of 3 Values is :" +arr.join("/")+"=" , divation(arr)+"<br>");
+          document.write("Product of 3 Values is  :" +arr.join("*")+"=", product(arr)+"<br>");
+        
+        
+        </script>
+    
+    
+    </bod>
+</html>

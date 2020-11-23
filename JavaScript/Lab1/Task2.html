@@ -1,42 +1,39 @@
-<!DOCTYP>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Sumation</title>
+    
+    <title></title>
     </head>
-<body>
+    <body>
+    
     <script>
-   
-       var sum = 0;
-       var result = 0;
-       var flag = 0;
- 
-
-do{
-    result = prompt("ENTER A NUM");
-    sum +=parseInt (result);
-
-}while(sum <=100 && isFinite(result)&& flag==0 && result !=0)
-    
-    if(isNaN(result)){
-        document.write("not a number");
-    }
-else if(result == 0){
-    document.write("zero is not allowed and sum is equal   ",sum);
-flag=0;
-}
-else{
-    document.write("value before exceding the limit was "+(sum - result));
-flag = 1;
-}
+        var sum=0;
+        var n=0;
+        var num=0;
+        var flag=0;
+        do{
+            n=prompt("Please Enter number ") ;
+            num=parseInt(n);
+            if(isFinite(num)){
+                sum+=num;
+            }else if (isNaN(num)){
+                alert("You should Enter number");
+            }
+            else if(num==0){
+                flag=1;
+            }
+        }while(sum<=100 && flag==0 )
+            
+            if(flag==0){
+                document.write("sum  :",sum);
+            }
+        else{
+            document.write("sum after enter Zero :",sum);
+        }
+            
         
         
-  
-    
-    </script>
-    
-    
-    
+        </script>
     
     </body>
-
 </html>

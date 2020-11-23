@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>String Processes </title>
+    </head>
+<body>
+    <script>
+    var inputUser = prompt("Plese Enter your String :");
+    var charUSer  = prompt("Pleae Enter Character which you want to count :");
+    var regConsidration = prompt("Are you Consider Case Sensitive?","Please Click Ok if you want Or  Cancel if you don't want");
+       
+        if(regConsidration!=null){
+             var pattern = new RegExp(charUSer,'g'); 
+            var arrString = inputUser.match(pattern);
+            count=arrString.length;
+             document.writeln("The number of "+charUSer+":"+count);
+        
+        }
+        else {
+           
+            
+           var pattern = new RegExp(charUSer,'ig'); 
+            var arrString = inputUser.match(pattern);
+            count=arrString.length;
+           document.writeln("The number of "+charUSer+":"+count);
+            
+        }
+    
+    
+    </script>
+    
+    
+    </body>
+
+</html>

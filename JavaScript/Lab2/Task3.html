@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>User Information</title>
+    </head>
+<body>
+    <script>
+        var patternName = new RegExp(/^[a-z]|^[A-Z]./,'g');
+        var patternPhone = new RegExp(/[0-9]{8}$/,'g');
+        var patternMobile = new RegExp(/(^010){11}$|(^011){11}$|(^012){11}$|(^015){11}$/,'g'); 
+        var patternEmail = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,'g');
+        
+        var color = prompt("Please Enter number to choose Color 1)red ,2)green or 3)blue");
+        switch(parseInt(color)){
+                
+            case 1 :color="red";break;
+            case 2 :color="green";break;
+            case 3 :color="blue";break;
+                
+        }
+        
+        var flag = true;
+        do{
+            var userName =prompt("Please Enter Your Name");
+            flag=patternName.test(userName);
+            //flag=isNaN(userName);
+        }
+        while(!flag);
+        
+        flag = true;
+        do{
+            var userPhone =prompt("Please Enter Your Phone Number");
+            flag=patternPhone.test(userPhone);
+        }
+        while(!flag);
+        
+        
+        /// Enter infinte Loop
+        flag =true;
+        do{
+            var userMobile =prompt("Please Enter Your Mobile Number");
+            flag=patternMobile.test(userMobile);
+        }while(!flag);
+        
+        flag = true;
+        do{
+             var UserEmail = prompt("Please Enter Your Email ");
+            flag =patternEmail.test( UserEmail);
+        }while(!flag);
+        
+        
+        var now =new Date();
+      
+        document.write("The Name User is :".fontcolor(color),name);
+        document.write("The Phone User is :".fontcolor(color),phone);
+        document.write("The Mobile User is :".fontcolor(color),mobile);
+        document.write("The Email User is :".fontcolor(color),email);
+        document.write("Today is",now.getDay.toString()+" "+now.getMonth.toString()+" "+now.getDate+" "+now.getYear);
+        
+        
+        
+        
+    </script>
+    
+    </body>
+</html>

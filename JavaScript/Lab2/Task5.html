@@ -1,0 +1,86 @@
+<!DocType>
+<html>
+<head>
+    <title>Sorting</title>
+    </head>
+<body>
+    
+    <script>
+   function sortAsc(arr) { 
+      
+    var i = 0, j;  
+      
+    while (i < arr.length) {  
+        j = i + 1;  
+        while (j < arr.length) { 
+              
+            if (arr[j] < arr[i]) { 
+                var temp = arr[i];  
+                arr[i] = arr[j];  
+                arr[j] = temp;  
+            }  
+            j++;  
+        }  
+        i++;  
+    }
+        return arr;
+} 
+   /* function Asc(arr){
+        var temp;
+        for(var i=0;i<arr.length-1;i++){
+            if(arr[i]>arr[i+1]){
+                temp=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=temp;
+            }
+        }
+        return arr;
+    }*/
+   /* function Desc(arr){
+        var temp;
+        for(var i=0;i<arr.length-1;i++){
+            if(arr[i]<arr[i+1]){
+                temp=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=temp;
+            }
+        }
+        return arr;
+    }*/
+        function sortDesc(arr) { 
+      
+    var i = 0, j;  
+      
+    while (i < arr.length) {  
+        j = i + 1;  
+        while (j < arr.length) { 
+              
+            if (arr[j] > arr[i]) { 
+                var temp = arr[i];  
+                arr[i] = arr[j];  
+                arr[j] = temp;  
+            }  
+            j++;  
+        }  
+        i++;  
+    }
+        return arr;
+} 
+        var array = new Array();
+        for(var i=0;i<5;i++){
+            array[i]=parseInt(prompt("Please Enter Vlaue of Element " + i));
+        }
+         var arrAsc=new Array();
+        var arrDesc=new Array();
+       
+        document.write("You have Enterd The values of :"+array.join(",") +"<br><br>");
+        arrAsc=sortAsc(array);
+        document.write("ASC Array:"+arrAsc.join(",") +"<br><br>");
+        arrDesc=sortDesc(array);
+        document.write("DESC Array:"+arrDesc.join(",") +"<br><br>");
+        
+        
+        
+    </script>
+    </body>
+</html>
