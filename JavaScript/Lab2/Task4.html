@@ -28,9 +28,18 @@
             }
             return product;
         }
-           var arr=new Array();
+        
+        
+        var arr=new Array();
+        var num;
            for(var i=0;i<3;i++){
-               arr[i]=parseInt(prompt("Please Enter The value of Element"+i));
+               num=prompt("Please Enter The value of Element"+i);
+               if(isFinite(num)){
+                   arr[i]=parseInt(num);
+               }
+               else{
+                   alert("Please enter Vlaid Data");i--;
+               }
            }
         
           document.write("Sum of 3 Values is :"+arr.join("+")+"=" ,sum(arr)+"<br>");

@@ -6,7 +6,7 @@
 <body>
     
     <script>
-   function sortAsc(arr) { 
+        function sortAsc(arr) { 
       
     var i = 0, j;  
       
@@ -25,28 +25,7 @@
     }
         return arr;
 } 
-   /* function Asc(arr){
-        var temp;
-        for(var i=0;i<arr.length-1;i++){
-            if(arr[i]>arr[i+1]){
-                temp=arr[i];
-                arr[i]=arr[i+1];
-                arr[i+1]=temp;
-            }
-        }
-        return arr;
-    }*/
-   /* function Desc(arr){
-        var temp;
-        for(var i=0;i<arr.length-1;i++){
-            if(arr[i]<arr[i+1]){
-                temp=arr[i];
-                arr[i]=arr[i+1];
-                arr[i+1]=temp;
-            }
-        }
-        return arr;
-    }*/
+  
         function sortDesc(arr) { 
       
     var i = 0, j;  
@@ -66,9 +45,17 @@
     }
         return arr;
 } 
+        
         var array = new Array();
+        var num;
+        
         for(var i=0;i<5;i++){
-            array[i]=parseInt(prompt("Please Enter Vlaue of Element " + i));
+         num=prompt("Please Enter Vlaue of Element " + i);    
+            if(isFinite(num)){array[i]=parseInt(num);}
+            else {
+                alert("Please Enter Valid Number");i--;
+            }
+            
         }
          var arrAsc=new Array();
         var arrDesc=new Array();
