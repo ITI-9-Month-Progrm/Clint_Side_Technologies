@@ -6,7 +6,7 @@
 <body>
     <script>
         function reverseString(str){
-            var reverseStr=" ";
+            var reverseStr="";
             var i;
             for(i=str.length-1;i>=0;i--){
                 reverseStr+=str[i];
@@ -20,18 +20,24 @@
     
         var originalString=inputUser;    
         var palindromString=reverseString(inputUser); 
-       /// document.writeln(palindromString);
+      
         
     if(caseConsidration==true){
         
         if (palindromString==originalString){
-            document.write("The String is not  Palinderom:"+palindromString+" "+originalString);
+            document.write("The String is Palinderom:"+palindromString+"<---"+originalString);
+        }
+        else {
+            document.write("This String is not Palindrom");
         }
     } 
     else{
        
-        if (palindromString.toLocaleLowerCase()==originalString.toLowerCase()){
-            document.write("The String is Palinderom:"+palindromString+" "+originalString);
+        if (palindromString.toLowerCase()==originalString.toLowerCase()){
+            document.write("The String is Palinderom:"+palindromString+"<---"+originalString);
+        }
+        else {
+            document.write("This String is not Palindrom");
         }
     } 
     

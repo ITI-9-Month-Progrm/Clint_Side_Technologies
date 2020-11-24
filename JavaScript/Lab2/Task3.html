@@ -5,13 +5,14 @@
     </head>
 <body>
     <script>
-        var patternName = new RegExp(/^[a-z]|^[A-Z]./,'g');
-        var patternPhone = new RegExp(/[0-9]{8}$/,'g');
-        var patternMobile = new RegExp(/(^010){11}$|(^011){11}$|(^012){11}$|(^015){11}$/,'g'); 
+        var patternName = new RegExp(/^[A-Za-z]+$/,'g');
+        var patternPhone = new RegExp(/^[0-9]{8}$/,'g');
+        var patternMobile = new RegExp(/^010[0-9]{8}$|^011[0-9]{8}$|^012[0-9]{8}$|^015[0-9]{8}$/,'g'); 
         var patternEmail = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,'g');
         
-        var color = prompt("Please Enter number to choose Color 1)red ,2)green or 3)blue");
-        switch(parseInt(color)){
+        var userColor = prompt("Please Enter number to choose Color 1)red 2)green 3)blue");
+        var color;
+        switch(parseInt(userColor)){
                 
             case 1 :color="red";break;
             case 2 :color="green";break;
@@ -23,7 +24,7 @@
         do{
             var userName =prompt("Please Enter Your Name");
             flag=patternName.test(userName);
-            //flag=isNaN(userName);
+            
         }
         while(!flag);
         
@@ -35,7 +36,7 @@
         while(!flag);
         
         
-        /// Enter infinte Loop
+        
         flag =true;
         do{
             var userMobile =prompt("Please Enter Your Mobile Number");
@@ -50,12 +51,14 @@
         
         
         var now =new Date();
+        date = now.toString();
+        today =date.substring(0 , 15);
       
-        document.write("The Name User is :".fontcolor(color),name);
-        document.write("The Phone User is :".fontcolor(color),phone);
-        document.write("The Mobile User is :".fontcolor(color),mobile);
-        document.write("The Email User is :".fontcolor(color),email);
-        document.write("Today is",now.getDay.toString()+" "+now.getMonth.toString()+" "+now.getDate+" "+now.getYear);
+        document.write("The Name User is :".fontcolor(color),userName +"<br>");
+        document.write("The Phone User is :".fontcolor(color),userPhone+"<br>");
+        document.write("The Mobile User is :".fontcolor(color),userMobile+"<br>");
+        document.write("The Email User is :".fontcolor(color),UserEmail+"<br>");
+        document.write("Today is".fontcolor(color),today+"<br>");
         
         
         
