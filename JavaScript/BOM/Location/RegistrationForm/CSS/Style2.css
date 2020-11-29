@@ -1,0 +1,51 @@
+body{
+    background-color:floralwhite
+    
+}
+
+
+.Registration{
+    border: solid;
+    border-color:darkcyan;
+    margin: auto;
+    border-radius: 20px;
+   align-items: center;    
+        
+    border-spacing: 10px;
+    
+    
+}
+
+.Login{
+       border: solid;
+    border-color:darkcyan;
+    margin: auto;
+    border-radius: 20px;
+   align-items: center;    
+        
+    border-spacing: 10px;
+    
+}
+
+#head1{
+    font: bold;
+  }
+
+
+td{
+    border-style: solid;
+    border-color: darkcyan;
+    border-radius: 50px;
+}
+
+input{
+    border: 0px;
+    border-radius: 10px
+    
+}
+button{
+    color: snow;
+    border: 0px;
+    background-color: darkcyan;
+    border-radius: 10px;
+}
