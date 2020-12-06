@@ -32,9 +32,9 @@ function allCookieList(){
  function getCookie(cookieName){
      var cookieArr;
      cookieArr=allCookieList();
-     for(cookieName in cookieArr){
+     
          return cookieArr[cookieName];
-     }
+    
  }
 
 //to delete Cookie based o it's name
