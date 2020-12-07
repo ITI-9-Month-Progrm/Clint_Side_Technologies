@@ -3,11 +3,13 @@ var linkedList = {}
 linkedList.data=[];
 
 linkedList.pushValue=function(val){
-      [].push.call(linkedList.data,val);
+      //[].push.call(linkedList.data,val);
+     linkedList.data.push(val);
 }
 
 linkedList.popValue=function(){
-    [].pop.call(linkedList.data);
+    //[].pop.call(linkedList.data);
+    linkedList.data.pop();
 }
 
 linkedList.displayAll=function(){
@@ -44,11 +46,25 @@ linkedList.removeIndex=function (index){
 linkedList.insertValue=function (index,Value){
     var part1=[],part2=[],total=[];
     var len;
+    var flag=1;
     len=linkedList.data.length;
-    part1=[].slice(0,index).call(linkedList.data);
-                part2=[].slice(index,len+1).call(linkedList.data); 
+         for(var i=0;i<len;i++){
+             if(linkedList.data[i]===Value){
+                 flag=0;   
+             }
+         }
+    
+    if(flag){
+        part1=linkedList.data.slice(0,index);
+                part2=linkedList.data.slice(index,len+1); 
                 part1.push(Value);
                 total=part1.concat(part2);
                 linkedList.data=total;
+    }
+    else{
+        throw new Error("Value is Found");
+    }
+    
+                
   
 }
