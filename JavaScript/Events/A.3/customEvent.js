@@ -16,11 +16,12 @@ function resetForm(){
     var myEvent = new Event("TIMEOUT");
     //Lisenter
     document.forms[0].addEventListener("TIMEOUT",function(){
-        setTimeout(clearData,30000);
+        alert("Please Enter Your Data ")
+        clearData();
         console.log("Firing");
     });
     //fire
-    document.forms[0].dispatchEvent(myEvent);
+   document.forms[0].dispatchEvent(myEvent)
     }
 
-resetForm();
+setTimeout(resetForm,30000);
