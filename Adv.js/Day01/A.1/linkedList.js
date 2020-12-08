@@ -21,25 +21,19 @@ linkedList.displayAll=function(){
 }
 
 linkedList.removeIndex=function (index){
-    var temp;
-    var len;
+     var len;
+     var part1,part2,total; 
     len=linkedList.data.length;
-    for(var i=0;i<len;i++){
-        if((index-1) == i){
-             
-            
-            temp=linkedList.data[i];
-            linkedList.data[i]=linkedList.data[0];
-            linkedList.data[0]=temp;
-            [].shift.call(linkedList.data);
-            
-            //return values to it's places
-            temp=linkedList.data[0];
-            linkedList.data[0]=linkedList.data[i-1];
-            linkedList.data[i-1]=temp;
-            
-            }
-    } 
+    if(index<len && index>0){
+        part1=linkedList.data.slice(0,index);
+        part2=linkedList.data.slice(index,len+1);
+        part2.shift();
+        total=part1.concat(part2);
+        linkedList.data=total;
+    }
+    else{
+        throw new Error("This index is not valied :( ");
+    }
     
 }
 
@@ -62,7 +56,7 @@ linkedList.insertValue=function (index,Value){
                 linkedList.data=total;
     }
     else{
-        throw new Error("Value is Found");
+        throw new Error("Value is Found :(");
     }
     
                 
