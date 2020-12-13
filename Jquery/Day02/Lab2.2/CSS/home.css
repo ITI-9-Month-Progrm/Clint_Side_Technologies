@@ -1,0 +1,12 @@
+div{
+    display: inline
+}
+#div2{
+     
+    margin-left: 600px;
+    width: 200px;
+    height: 350px;
+    background-color: yellow;
+    display:inline-block;
+}
+
