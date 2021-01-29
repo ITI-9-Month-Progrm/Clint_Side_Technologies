@@ -1,0 +1,70 @@
+#card{
+    border: 3px solid;
+    border-radius: 8px;
+    border-color: red;
+    width: 176px;
+    height: 290px;
+}
+p{
+    font-family: Algerian;
+    font-size: 200%;
+    color: black;
+    font-weight: 900;
+}
+#top{
+    margin-top: 0px;
+    margin-left: 2px;
+}
+#bottom{
+    margin-top: 80px;
+    margin-left: 82px;
+}
+#shape{
+    
+    margin-top: 73px;
+    margin-left: 61px;
+}
+/*heart shape*/
+
+#heart {
+    background-color: black;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(135deg);
+    width: 30px;
+  }
+  
+  
+  /*two circle*/
+  #heart:before,
+  #heart:after {
+    content: "";
+    background-color: black;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  #heart:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  #heart:after {
+    left: 15px;
+    top: 0;
+  }
+  /*triangle*/
+  #triangle{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid black;
+    margin-top: -6px;
+    margin-left: 10px;
+}

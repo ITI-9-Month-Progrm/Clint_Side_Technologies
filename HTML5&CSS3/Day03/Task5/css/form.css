@@ -1,0 +1,26 @@
+div{
+    border: solid;
+    border-radius: 5px ;
+    border-color: black ;
+    width: 550px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+}
+span{
+    opacity: 0.5;
+}
+#btn{
+    margin-left: 250px;
+}
+input:required{
+    border-color: red;
+}
+input:invalid{
+    border-color: red;
+}
+input:valid {
+    border-color: green;
+   
+    
+    }

@@ -1,0 +1,17 @@
+
+img{
+    width: 350px;
+    height: 300px;
+    border: 2px solid;
+   transition: opacity 5s;
+}
+img:hover{
+   
+    opacity: 1;
+    opacity: 0.9;
+    opacity: 0.7;
+    opacity: 0.5;
+    opacity: 0.3;
+    opacity: 0.0;
+   
+}

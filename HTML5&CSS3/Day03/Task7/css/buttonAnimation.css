@@ -1,0 +1,33 @@
+@keyframes buttonAnimation{
+    0%{
+        background-color: antiquewhite;
+        box-shadow: 0 0px 10px rgb(153, 230, 255);
+    }
+    50%{
+        background-color: antiquewhite;
+        box-shadow: 0 0px 10px rgb(90, 200, 255);
+    }
+    100%{
+        background-color: antiquewhite;
+        box-shadow: 0 0px 10px rgb(0, 134, 179);
+    }
+}
+#btn1{
+    border: 1px solid;
+    border-radius: 10px;
+    border-color:rgb(0, 134, 179) ;
+    background-color: rgb(153, 230, 255);
+    margin-left: 900px;
+    margin-top: 200px;
+    transition: all ;
+    transform: scale(3,3);
+}
+
+#btn1:hover{
+   
+    animation-name: buttonAnimation;
+    animation-duration: 2s;
+   
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 5;
+}
