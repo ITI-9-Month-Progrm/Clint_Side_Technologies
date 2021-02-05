@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(198, 236, 198);
+}
+.introImg{
+   width: 10.5em;
+   height: 12.5em;
+}
+.typeImg{
+    width: 15.5em;
+   height: 15.5em;
+}
+.imgIcon{
+    width:8.5em;
+   height:6.5em;
+}
+.videoClass{
+    width: 25em;
+    height: 21.875em;
+}
+.footerImg{
+    width: 24em;
+    height: 5em;
+}
