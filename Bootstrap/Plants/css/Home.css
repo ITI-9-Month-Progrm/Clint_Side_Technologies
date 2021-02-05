@@ -5,17 +5,38 @@ body{
    width: 10.5em;
    height: 12.5em;
 }
+.introImg:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 20px 5px rgb(3, 65, 13);
+    z-index:1;
+}
+
 .typeImg{
     width: 15.5em;
-   height: 15.5em;
+   height: 10.5em;
+}
+.typeImg:hover{
+    transform: scale(1.3);
+    box-shadow: 1px 1px 20px 5px rgb(3, 65, 13);
+    z-index:1;
 }
 .imgIcon{
     width:8.5em;
    height:6.5em;
 }
+.parg:hover{
+    transform: scale(1.3);
+    box-shadow: 2px 3px 20px 5px rgb(3, 65, 13);
+    z-index:1;
+}
 .videoClass{
     width: 25em;
-    height: 21.875em;
+    height: 25em;
+}
+.videoClass:hover{
+    transform: scale(1.5);
+   
+    z-index:2;
 }
 .footerImg{
     width: 24em;
