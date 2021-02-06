@@ -1,6 +1,12 @@
 body{
     background-color: rgb(198, 236, 198);
 }
+/*@media (max-width: 576px){
+    #mainImg{
+
+        display: block !important;
+        text-align: center;
+    }*/
 .introImg{
    width: 10.5em;
    height: 12.5em;
