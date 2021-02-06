@@ -1,12 +1,17 @@
 body{
     background-color: rgb(198, 236, 198);
 }
-/*@media (max-width: 576px){
-    #mainImg{
 
-        display: block !important;
-        text-align: center;
-    }*/
+.bookmarkIcon{
+
+    width: 50%;
+    height: 12%;
+    background-color: rgb(3, 65, 13);
+    box-sizing: border-box;
+    border-bottom-right-radius: 40%; 
+    border-bottom-left-radius: 40%;   
+}
+
 .introImg{
    width: 10.5em;
    height: 12.5em;
